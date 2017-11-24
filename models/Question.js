@@ -29,7 +29,10 @@ class Question {
     });
   }
 
-  static Find(id) {}
-}
+  static Find(id){
+    return new Promise(function(resolve){
+      resolve("This should be a found question")
+    })
+  }
 
 module.exports = Question;
